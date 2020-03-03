@@ -13,6 +13,12 @@
     background: @button-background;
     color: @button-font-color;
 
+    @media @mobile {
+        width: 100%;
+        padding: 3% 5%;
+        text-align: center;
+    }
+
     &:hover {
         border: 3px solid @jetblack;
         background: none;
@@ -25,18 +31,41 @@
     border-bottom: 2px dotted @jetblack;
     padding-bottom: 3%;
     height: 25rem;
+
+    @media @mobile {
+        height: auto;
+        margin-bottom: 8%;
+    }
     
     img {
         width: 30%;
+
+        @media @mobile {
+            display: none;
+        }
     }
     
     .text-box {
         width:60%;
 
+        @media @mobile {
+            width: 100%;
+        }
+
         .button {
             margin-top: 5%;
+
+            @media @mobile {
+                width: 100%;
+                margin-top: 8%;
+                display: flex;
+                align-content: center;
+                margin-bottom: 5%;
+            }
             a {
                 .button-style();
+
+                
             }
         }
     }
