@@ -323,17 +323,23 @@ p {
 }
 @media (max-width: 500px) {
   .header .nav-line .button a {
-    padding: 2%;
     border: none;
     width: 100%;
     text-align: center;
     font-size: 2.5rem;
+    padding: 0;
   }
 }
 .header .nav-line .button a:hover {
   background: white;
   border: 2px solid black;
   color: black;
+}
+@media (max-width: 500px) {
+  .header .nav-line .button a:hover {
+    background: black;
+    color: #D0CECF;
+  }
 }
 footer {
   background: #D0CECF;

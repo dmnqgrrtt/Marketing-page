@@ -81,11 +81,11 @@
                 text-align: center;
 
                 @media @mobile {
-                    padding: 2%;
                     border: none;
                     width: 100%;
                     text-align: center;
                     font-size: 2.5rem;
+                    padding: 0;
                 }
             
 
@@ -93,6 +93,11 @@
                     background: @snowwhite;
                     border: 2px solid black;
                     color: @jetblack;
+
+                    @media @mobile {
+                        background: @jetblack;
+                        color: @skygray;
+                    }
                 }
             }
                 
