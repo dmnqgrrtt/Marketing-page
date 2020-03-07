@@ -1,0 +1,59 @@
+.about {
+    .about-heading {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    h1 {
+        background: @skygray;
+        width: 80%;
+        text-align: center;
+        padding: 2%;
+        border-radius: 50px;
+        margin-bottom: 2%;
+        border: 2px solid @jetblack;
+
+        @media @mobile {
+            width: 100%;
+        }
+    }
+    .about-img {
+        width: 100%;
+        border-radius: 75px;
+        @media @mobile {
+            display: none;
+        }
+        
+    }
+    .team {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 100%;
+        margin: 2% 0;
+
+        @media @mobile {
+            flex-flow: column nowrap;
+        }
+        
+    }
+    .members {
+        width: 30%;
+        margin: 1%;
+        padding: 5%;
+        border: 5px solid @bloodred;
+        border-radius: 20px;
+        background: #232524;
+        color: @snowwhite;
+
+        @media @mobile {
+            width: 100%;
+        }
+        
+        img {
+            width: 100%;
+            border-radius: 100px;
+            margin-bottom: 5%;
+        }
+    }
+}
