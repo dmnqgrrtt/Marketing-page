@@ -222,11 +222,17 @@ html {
 }
 h1 {
   font-size: 5rem;
+  font-weight: bold;
 }
 h2 {
   font-size: 3.5rem;
   margin-bottom: 2%;
   color: #AF131E;
+  font-weight: bold;
+}
+h3 {
+  font-size: 2rem;
+  margin-bottom: 2%;
   font-weight: bold;
 }
 p {
@@ -251,6 +257,7 @@ p {
   background: black;
   padding: 1%;
   align-items: center;
+  border-radius: 25px;
 }
 @media (max-width: 500px) {
   .header .nav-line {
@@ -360,7 +367,6 @@ footer {
 .home .title .title-textbox h1 {
   margin-top: 30%;
   text-align: center;
-  font-weight: bold;
 }
 @media (max-width: 500px) {
   .home .title .title-textbox h1 {
@@ -566,4 +572,63 @@ footer {
   border: 3px solid black;
   background: none;
   color: #AF131E;
+}
+.about .about-heading {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.about h1 {
+  background: #D0CECF;
+  width: 80%;
+  text-align: center;
+  padding: 2%;
+  border-radius: 50px;
+  margin-bottom: 2%;
+  border: 2px solid black;
+}
+@media (max-width: 500px) {
+  .about h1 {
+    width: 100%;
+  }
+}
+.about .about-img {
+  width: 100%;
+  border-radius: 75px;
+}
+@media (max-width: 500px) {
+  .about .about-img {
+    display: none;
+  }
+}
+.about .team {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 2% 0;
+}
+@media (max-width: 500px) {
+  .about .team {
+    flex-flow: column nowrap;
+  }
+}
+.about .members {
+  width: 30%;
+  margin: 1%;
+  padding: 5%;
+  border: 5px solid #AF131E;
+  border-radius: 20px;
+  background: #232524;
+  color: white;
+}
+@media (max-width: 500px) {
+  .about .members {
+    width: 100%;
+  }
+}
+.about .members img {
+  width: 100%;
+  border-radius: 100px;
+  margin-bottom: 5%;
 }
